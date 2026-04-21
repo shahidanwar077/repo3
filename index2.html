@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahid Anwar — Data Analyst</title>
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(120deg, #2e344f, #f0fdf4);
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #1e293b;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #c7d2fe;
+  font-weight: bold;
+}
+.nav a:hover { color: #facc15; }
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #243051, #e7e9ec);
+  color: white;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Section */
+.section {
+  padding: 50px 40px;
+}
+.section h2 {
+  margin-bottom: 25px;
+  color: #1e3a8a;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #28355a;
+  color: white;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* Experience & Education */
+.box {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #ebecef;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Button */
+.btn {
+  padding: 12px 20px;
+  background: #facc15;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover { background: #eab308; }
+
+/* Contact */
+.contact p {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 18px;
+  background: #1e3a8a;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="nav">
+  <b>Shahid Anwar</b>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- About -->
+<div class="hero" id="about">
+  <div class="avatar">SA</div>
+  <div>
+    <h2>Hello, I'm Shahid Anwar</h2>
+    <p><b>Professional Data Analyst</b></p>
+
+    <p>
+      I am a passionate Data Analyst skilled in Excel, SQL, Python, and Power BI.
+      I transform raw data into meaningful insights and business solutions.
+    </p>
+
+    <p>
+      I have worked on multiple real-world projects like sales analysis,
+      dashboards, and customer segmentation.
+    </p>
+
+    <button class="btn" onclick="showMessage()">Hire Me</button>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="section" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Sales Data Analysis</h3>
+      <p>Analyzed sales data to identify trends and increased revenue using insights.</p>
+      <p><b>Tools:</b> Excel, Power BI</p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Segmentation</h3>
+      <p>Segmented customers using Python & SQL to improve marketing strategies.</p>
+      <p><b>Tools:</b> Python, SQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Interactive Dashboard</h3>
+      <p>Built Power BI dashboards for real-time business monitoring.</p>
+      <p><b>Tools:</b> Power BI</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Cleaning Project</h3>
+      <p>Cleaned and structured messy datasets for better analysis.</p>
+      <p><b>Tools:</b> Python, Excel</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Skills -->
+<div class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Excel</span>
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Power BI</span>
+    <span>Data Cleaning</span>
+    <span>Data Visualization</span>
+  </div>
+</div>
+
+<!-- Experience -->
+<div class="section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="box">
+    <h3>Data Analytics Projects</h3>
+    <p>Worked on real-world datasets including sales and customer data.</p>
+  </div>
+
+  <div class="box">
+    <h3>Freelance Practice</h3>
+    <p>Created dashboards and reports for learning and practical exposure.</p>
+  </div>
+
+
+<!-- Contact -->
+<div class="section contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: yourgmail@gmail.com</p>
+  <p>LinkedIn: linkedin.com/in/yourname</p>
+  <p>GitHub: github.com/yourname</p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  © 2026 Shahid Anwar | Data Analyst Portfolio
+</div>
+
+<script>
+function showMessage() {
+  alert("Thanks! I will contact you soon.");
+}
+</script>
+
+</body>
+</html>
